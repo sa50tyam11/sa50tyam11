@@ -23,7 +23,7 @@
 ```ts
 const satyam = {
   name      : "Satyam Kumar Jha",
-  role      : "Full Stack Developer & Founder of SENO",
+  role      : "Full Stack Developer & Founder of SENO STUDIO",
   location  : "India 🇮🇳",
   studio    : "SENO — Building functional & aesthetically pleasing web experiences",
   passion   : "Thriving at the intersection of Logic and Design",
