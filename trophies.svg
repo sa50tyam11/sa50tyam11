@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 200" width="820" height="200" role="img" aria-label="Trophies">
+<defs>
+<clipPath id="trophClip"><rect width="820" height="200" rx="16"/></clipPath>
+<linearGradient id="trophBg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1a0b2e"/><stop offset="100%" stop-color="#2d0a4e"/></linearGradient>
+<linearGradient id="rankGradS" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffd166"/><stop offset="100%" stop-color="#ff9f1c"/></linearGradient>
+<linearGradient id="rankGradA" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ff5fb0"/><stop offset="100%" stop-color="#c23fe0"/></linearGradient>
+<linearGradient id="rankGradB" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#7fd6ff"/><stop offset="100%" stop-color="#5f9dff"/></linearGradient>
+<linearGradient id="cellShine" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#ffffff" stop-opacity="0"/><stop offset="45%" stop-color="#ffffff" stop-opacity="0"/><stop offset="50%" stop-color="#ffffff" stop-opacity="0.4"/><stop offset="55%" stop-color="#ffffff" stop-opacity="0"/><stop offset="100%" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<filter id="trophGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<style>
+  text { font-family: 'Segoe UI', Verdana, Arial, sans-serif; }
+  @keyframes popCell {
+    0%   { opacity: 0; transform: scale(0.6) translateY(14px); }
+    65%  { opacity: 1; transform: scale(1.06) translateY(-3px); }
+    100% { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  .cell { opacity: 0; transform-box: fill-box; transform-origin: center; animation: popCell 0.6s cubic-bezier(.2,.8,.3,1.3) forwards; }
+  @keyframes glowPulse { 0%,100% { filter: drop-shadow(0 0 2px currentColor); } 50% { filter: drop-shadow(0 0 6px currentColor); } }
+  .rankGlow { animation: glowPulse 2.2s ease-in-out infinite; }
+  @keyframes shineSweep {
+    0%   { transform: translate(-140px,-160px) rotate(20deg); }
+    100% { transform: translate(140px,160px) rotate(20deg); }
+  }
+  .cellShine { animation: shineSweep 3.2s ease-in-out infinite; }
+</style>
+<g clip-path="url(#trophClip)">
+<rect width="820" height="200" fill="url(#trophBg)"/>
+<g opacity="0.06" stroke="#c9a8ef">
+<line x1="0" y1="0" x2="0" y2="200"/>
+<line x1="30" y1="0" x2="30" y2="200"/>
+<line x1="60" y1="0" x2="60" y2="200"/>
+<line x1="90" y1="0" x2="90" y2="200"/>
+<line x1="120" y1="0" x2="120" y2="200"/>
+<line x1="150" y1="0" x2="150" y2="200"/>
+<line x1="180" y1="0" x2="180" y2="200"/>
+<line x1="210" y1="0" x2="210" y2="200"/>
+<line x1="240" y1="0" x2="240" y2="200"/>
+<line x1="270" y1="0" x2="270" y2="200"/>
+<line x1="300" y1="0" x2="300" y2="200"/>
+<line x1="330" y1="0" x2="330" y2="200"/>
+<line x1="360" y1="0" x2="360" y2="200"/>
+<line x1="390" y1="0" x2="390" y2="200"/>
+<line x1="420" y1="0" x2="420" y2="200"/>
+<line x1="450" y1="0" x2="450" y2="200"/>
+<line x1="480" y1="0" x2="480" y2="200"/>
+<line x1="510" y1="0" x2="510" y2="200"/>
+<line x1="540" y1="0" x2="540" y2="200"/>
+<line x1="570" y1="0" x2="570" y2="200"/>
+<line x1="600" y1="0" x2="600" y2="200"/>
+<line x1="630" y1="0" x2="630" y2="200"/>
+<line x1="660" y1="0" x2="660" y2="200"/>
+<line x1="690" y1="0" x2="690" y2="200"/>
+<line x1="720" y1="0" x2="720" y2="200"/>
+<line x1="750" y1="0" x2="750" y2="200"/>
+<line x1="780" y1="0" x2="780" y2="200"/>
+<line x1="810" y1="0" x2="810" y2="200"/>
+</g>
+<g class="cell" style="animation-delay:0.15s">
+  <clipPath id="cellclip0"><rect x="5.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="5.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#ffd166" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip0)"><rect class="cellShine" x="-15.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#ffd166" transform="translate(43.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradS)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradS)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradS)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradS)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradS)"/>
+  </g>
+  <circle cx="103.0" cy="42" r="13" fill="url(#rankGradS)"/>
+  <text x="103.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">S</text>
+  <text x="65.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Commits</text>
+</g>
+<g class="cell" style="animation-delay:0.28s">
+  <clipPath id="cellclip1"><rect x="143.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="143.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#ff5fb0" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip1)"><rect class="cellShine" x="123.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#ff5fb0" transform="translate(181.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradA)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradA)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradA)"/>
+  </g>
+  <circle cx="241.0" cy="42" r="13" fill="url(#rankGradA)"/>
+  <text x="241.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">A</text>
+  <text x="203.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Pull Shark</text>
+</g>
+<g class="cell" style="animation-delay:0.41s">
+  <clipPath id="cellclip2"><rect x="281.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="281.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#ffd166" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip2)"><rect class="cellShine" x="261.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#ffd166" transform="translate(319.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradS)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradS)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradS)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradS)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradS)"/>
+  </g>
+  <circle cx="379.0" cy="42" r="13" fill="url(#rankGradS)"/>
+  <text x="379.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">S</text>
+  <text x="341.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Stars</text>
+</g>
+<g class="cell" style="animation-delay:0.54s">
+  <clipPath id="cellclip3"><rect x="419.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="419.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#ff5fb0" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip3)"><rect class="cellShine" x="399.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#ff5fb0" transform="translate(457.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradA)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradA)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradA)"/>
+  </g>
+  <circle cx="517.0" cy="42" r="13" fill="url(#rankGradA)"/>
+  <text x="517.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">A</text>
+  <text x="479.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Repositories</text>
+</g>
+<g class="cell" style="animation-delay:0.67s">
+  <clipPath id="cellclip4"><rect x="557.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="557.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#7fd6ff" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip4)"><rect class="cellShine" x="537.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#7fd6ff" transform="translate(595.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradB)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradB)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradB)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradB)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradB)"/>
+  </g>
+  <circle cx="655.0" cy="42" r="13" fill="url(#rankGradB)"/>
+  <text x="655.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">B</text>
+  <text x="617.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Followers</text>
+</g>
+<g class="cell" style="animation-delay:0.80s">
+  <clipPath id="cellclip5"><rect x="695.0" y="20" width="120" height="160" rx="14"/></clipPath>
+  <rect x="695.0" y="20" width="120" height="160" rx="14" fill="#241238" stroke="#ff5fb0" stroke-width="1.4"/>
+  <g clip-path="url(#cellclip5)"><rect class="cellShine" x="675.0" y="0" width="60" height="240" fill="url(#cellShine)"/></g>
+  <g class="rankGlow" style="color:#ff5fb0" transform="translate(733.0,38)">
+    <path d="M4 6 h36 v14 c0 14 -9 22 -18 22 s-18 -8 -18 -22 Z" fill="url(#rankGradA)"/>
+    <path d="M4 10 c-10 0 -10 18 6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M40 10 c10 0 10 18 -6 20" fill="none" stroke="url(#rankGradA)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="16" y="40" width="12" height="10" fill="url(#rankGradA)"/>
+    <rect x="8" y="49" width="28" height="6" rx="2" fill="url(#rankGradA)"/>
+  </g>
+  <circle cx="793.0" cy="42" r="13" fill="url(#rankGradA)"/>
+  <text x="793.0" y="47" text-anchor="middle" font-size="14" font-weight="800" fill="#1a0b2e">A</text>
+  <text x="755.0" y="164" text-anchor="middle" font-size="13" font-weight="700" fill="#f3e9ff">Streak</text>
+</g>
+</g>
+<rect x="1" y="1" width="818" height="198" rx="15" fill="none" stroke="#5b2a86" stroke-width="1.6" opacity="0.85"/>
+</svg>

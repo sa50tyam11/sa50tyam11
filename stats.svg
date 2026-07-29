@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" width="480" height="220" role="img" aria-label="GitHub stats">
+<defs>
+
+  <clipPath id="statsClip"><rect width="480" height="220" rx="16"/></clipPath>
+  <linearGradient id="statsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1a0b2e"/><stop offset="100%" stop-color="#2d0a4e"/>
+  </linearGradient>
+  <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ff5fb0"/><stop offset="100%" stop-color="#a45cff"/>
+  </linearGradient>
+  <filter id="statsGlow" x="-60%" y="-60%" width="220%" height="220%">
+    <feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  text { font-family: 'Segoe UI', Verdana, Arial, sans-serif; }
+  @keyframes slideIn { from { opacity: 0; transform: translateX(-14px); } to { opacity: 1; transform: translateX(0); } }
+  .row { opacity: 0; animation: slideIn 0.55s ease forwards; }
+  @keyframes growW { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  .bar { transform-box: fill-box; transform-origin: left center; transform: scaleX(0); animation: growW 1s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  .fade { opacity: 0; animation: fadeIn 0.6s ease forwards; }
+  @keyframes ringPulse { 0%,100% { filter: drop-shadow(0 0 2px #ff5fb0); } 50% { filter: drop-shadow(0 0 7px #ff5fb0); } }
+  .ring { animation: ringPulse 2.6s ease-in-out infinite; }
+</style>
+<g clip-path="url(#statsClip)">
+  <rect width="480" height="220" fill="url(#statsBg)"/>
+  <g opacity="0.06" stroke="#c9a8ef">
+<line x1="0" y1="0" x2="0" y2="220"/>
+<line x1="30" y1="0" x2="30" y2="220"/>
+<line x1="60" y1="0" x2="60" y2="220"/>
+<line x1="90" y1="0" x2="90" y2="220"/>
+<line x1="120" y1="0" x2="120" y2="220"/>
+<line x1="150" y1="0" x2="150" y2="220"/>
+<line x1="180" y1="0" x2="180" y2="220"/>
+<line x1="210" y1="0" x2="210" y2="220"/>
+<line x1="240" y1="0" x2="240" y2="220"/>
+<line x1="270" y1="0" x2="270" y2="220"/>
+<line x1="300" y1="0" x2="300" y2="220"/>
+<line x1="330" y1="0" x2="330" y2="220"/>
+<line x1="360" y1="0" x2="360" y2="220"/>
+<line x1="390" y1="0" x2="390" y2="220"/>
+<line x1="420" y1="0" x2="420" y2="220"/>
+<line x1="450" y1="0" x2="450" y2="220"/>
+<line x1="480" y1="0" x2="480" y2="220"/>
+</g>
+<text x="20" y="32" font-size="17" font-weight="700" fill="#f3e9ff" class="fade" style="animation-delay:0.1s">Satyam’s GitHub Stats</text>
+<circle cx="402" cy="118" r="52" fill="none" stroke="#33184f" stroke-width="10"/>
+<circle class="ring" cx="402" cy="118" r="52" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-linecap="round" transform="rotate(-90 402 118)" stroke-dasharray="0 326.7"><animate attributeName="stroke-dasharray" from="0 326.7" to="303.9 326.7" begin="0.4s" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.2 0.6 0.3 1" keyTimes="0;1" values="0 326.7;303.9 326.7"/></circle>
+<text x="402" y="127" text-anchor="middle" font-size="26" font-weight="800" fill="#f3e9ff" class="fade" style="animation-delay:1.6s">A+</text>
+<text x="402" y="192" text-anchor="middle" font-size="11" fill="#c9a8ef" class="fade" style="animation-delay:1.7s">RANK</text>
+<g class="row" style="animation-delay:0.30s">
+  <circle cx="24" cy="57" r="4" fill="#ffd166"/>
+  <text x="36" y="62" font-size="13" fill="#c9a8ef">Total Stars</text>
+  <text x="250" y="62" font-size="13" font-weight="700" text-anchor="end" fill="#f3e9ff">312</text>
+</g>
+<g class="row" style="animation-delay:0.42s">
+  <circle cx="24" cy="84" r="4" fill="#ff5fb0"/>
+  <text x="36" y="89" font-size="13" fill="#c9a8ef">Total Commits</text>
+  <text x="250" y="89" font-size="13" font-weight="700" text-anchor="end" fill="#f3e9ff">2,480</text>
+</g>
+<g class="row" style="animation-delay:0.54s">
+  <circle cx="24" cy="111" r="4" fill="#7fd6ff"/>
+  <text x="36" y="116" font-size="13" fill="#c9a8ef">Total PRs</text>
+  <text x="250" y="116" font-size="13" font-weight="700" text-anchor="end" fill="#f3e9ff">146</text>
+</g>
+<g class="row" style="animation-delay:0.66s">
+  <circle cx="24" cy="138" r="4" fill="#a45cff"/>
+  <text x="36" y="143" font-size="13" fill="#c9a8ef">Total Issues</text>
+  <text x="250" y="143" font-size="13" font-weight="700" text-anchor="end" fill="#f3e9ff">58</text>
+</g>
+<g class="row" style="animation-delay:0.78s">
+  <circle cx="24" cy="165" r="4" fill="#ffd166"/>
+  <text x="36" y="170" font-size="13" fill="#c9a8ef">Contributed to</text>
+  <text x="250" y="170" font-size="13" font-weight="700" text-anchor="end" fill="#f3e9ff">27</text>
+</g>
+</g>
+<rect x="1" y="1" width="478" height="218" rx="15" fill="none" stroke="#5b2a86" stroke-width="1.6" opacity="0.85"/>
+</svg>
